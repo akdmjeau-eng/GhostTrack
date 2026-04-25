@@ -1,7 +1,6 @@
-#! python3
 #!/bin/bash
-# 
-#
+# kali
+# root
 RUTA1="/root/path/to/venv/bin/activate"
 RUTA2="/root/Nexus/venv/bin/activate"
 
@@ -12,7 +11,7 @@ elif [ -f "$RUTA2" ]; then
     source "$RUTA2"
     echo "[] Entorno activado desde: Nexus/venv"
 else
-    #
+    # kernel
     EXTRA=$(find /root -name "activate" -path "*/bin/*" | head -n 1)
     if [ -n "$EXTRA" ]; then
         source "$EXTRA"
@@ -23,7 +22,7 @@ else
     fi
 fi
 export PYTHONPATH=$PYTHONPATH:$(pwd)
-#
+# string
 if [ -f "/root/GhostTrack/GhostTR.py" ]; then
     echo "[*] Iniciando GhostTrack..."
     python3 /root/GhostTrack/GhostTR.py
@@ -61,6 +60,4 @@ fi
 
 
 
-                                          [ Read 34 lines ]
-^G Help       ^O Write Out  ^F Where Is   ^K Cut        ^T Execute    ^C Location   M-U Undo
-^X Exit       ^R Read File  ^\ Replace    ^U Paste      ^J Justify    ^/ Go To Line M-E Redo
+ 
